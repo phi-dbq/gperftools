@@ -1,3 +1,7 @@
+#if defined(__APPLE__)
+#define _XOPEN_SOURCE
+#include <sys/ucontext.h>
+#endif
 #include <ucontext.h>
 #include <stddef.h>
 
